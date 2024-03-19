@@ -9,6 +9,10 @@
       section {
         display: flex;
         flex-direction: row;
+        align-items: flex-start;
+      }
+      .noWrap{
+        text-wrap: nowrap;
       }
     </style>
   </head>
@@ -18,7 +22,7 @@
     <section>
       <div>
         <h2>Event:</h2>
-        <ul id="partyNames"></ul>
+        <ul class="noWrap" id="partyNames"></ul>
       </div>
       <div>
         <h2>Description</h2>
@@ -26,7 +30,7 @@
       </div>
       <div>
         <h2>Date:</h2>
-        <ul id="partyDates"></ul>
+        <ul class="noWrap" id="partyDates"></ul>
       </div>
       <div>
         <h2>Time:</h2>
@@ -34,7 +38,7 @@
       </div>
       <div>
         <h2>Location:</h2>
-        <ul id="partyLocations"></ul>
+        <ul class="noWrap" id="partyLocations"></ul>
       </div>
     </section>
   </body>
