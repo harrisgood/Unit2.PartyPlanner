@@ -2,9 +2,40 @@
   <head>
     <script defer src="./main.js"></script>
     <title>Ultimate Party Planner</title>
+    <style>
+      ul{
+        list-style-type: none;
+      }
+      section {
+        display: flex;
+        flex-direction: row;
+      }
+    </style>
   </head>
   <body>
     <h1>Ultimate Party Planner</h1>
-    <ul id="partyList"></ul>
+
+    <section>
+      <div>
+        <h2>Event:</h2>
+        <ul id="partyNames"></ul>
+      </div>
+      <div>
+        <h2>Description</h2>
+        <ul id="partyDescriptions"></ul>
+      </div>
+      <div>
+        <h2>Date:</h2>
+        <ul id="partyDates"></ul>
+      </div>
+      <div>
+        <h2>Time:</h2>
+        <ul id="partyTimes"></ul>
+      </div>
+      <div>
+        <h2>Location:</h2>
+        <ul id="partyLocations"></ul>
+      </div>
+    </section>
   </body>
 </html>
