@@ -28,7 +28,7 @@ async function getEvents() {
 
   // parse data into useable format
   const jsonParties = await apiParties.json()
-
+    console.log(jsonParties)
   // update state with parsed data
   state.events = jsonParties.data
 

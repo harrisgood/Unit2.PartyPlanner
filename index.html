@@ -5,11 +5,22 @@
     <style>
       ul{
         list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        border: 5px solid black;
+        border-left: 0;
+        padding-left: 0;
+        background-color: aquamarine;
+        text-align: center;
+      }
+      li:nth-child(odd){
+        background-color: hotpink;
       }
       section {
         display: flex;
         flex-direction: row;
-        align-items: flex-start;
+        /* align-items: flex-start; */
       }
       .noWrap{
         text-wrap: nowrap;
@@ -21,23 +32,23 @@
 
     <section>
       <div>
-        <h2>Event:</h2>
-        <ul class="noWrap" id="partyNames"></ul>
+        <h2>Event</h2>
+        <ul style="border-left: 5px solid black; border-right: none;" class="noWrap" id="partyNames"></ul>
       </div>
       <div>
         <h2>Description</h2>
-        <ul id="partyDescriptions"></ul>
+        <ul style="border-left: 5px solid black;" id="partyDescriptions"></ul>
       </div>
       <div>
-        <h2>Date:</h2>
+        <h2>Date</h2>
         <ul class="noWrap" id="partyDates"></ul>
       </div>
       <div>
-        <h2>Time:</h2>
+        <h2>Time</h2>
         <ul id="partyTimes"></ul>
       </div>
       <div>
-        <h2>Location:</h2>
+        <h2>Location</h2>
         <ul class="noWrap" id="partyLocations"></ul>
       </div>
     </section>
