@@ -1,56 +1,77 @@
 <html>
+  
   <head>
     <script defer src="./main.js"></script>
     <title>Ultimate Party Planner</title>
     <style>
-      ul{
-        list-style-type: none;
+      /*
+        todos:
+          -border between paragraphs (event properties)
+          -space out subtitles
+          -bold event names?
+
+      */
+
+
+      div{
         display: flex;
-        flex-direction: column;
-        gap: 40px;
+        /* flex-direction: row; */
+        justify-content: space-between;
+        gap: 5px;
         border: 5px solid black;
-        border-left: 0;
-        padding-left: 0;
+        border-top: 0;
+        padding: 5px;
         background-color: aquamarine;
-        text-align: center;
-      }
-      li:nth-child(odd){
-        background-color: hotpink;
-      }
-      section {
-        display: flex;
-        flex-direction: row;
+        /* text-align: center; */
         /* align-items: flex-start; */
       }
-      .noWrap{
-        text-wrap: nowrap;
+
+      /* make every other event background pink for legibility */
+      div:nth-child(odd){
+        background-color: hotpink;
+      }
+
+      p{
+        font-size: large;
+      }
+
+      /* ensure that every paragraph has an appropriate amount of space */
+      p:first-child{
+        width: 20%;
+      }
+      p:nth-child(2){
+        width: 40%;
+      }
+      p:nth-child(3){
+        width: 10%;
+      }
+      p:nth-child(4){
+        width: 10%;
+      }
+      p:nth-child(5){
+        width: 20%;
+      }
+
+      .shouldReallyBeAnH2{
+        font-size: xx-large;
+        font-weight: bolder;
+        
       }
     </style>
   </head>
   <body>
     <h1>Ultimate Party Planner</h1>
-
     <section>
-      <div>
-        <h2>Event</h2>
-        <ul style="border-left: 5px solid black; border-right: none;" class="noWrap" id="partyNames"></ul>
+      <div style="background-color: aquamarine; border-top: 5px solid black;">        
+        <p class="shouldReallyBeAnH2">Event</p>
+        <p class="shouldReallyBeAnH2">Description</p>
+        <p class="shouldReallyBeAnH2">Date</p>
+        <p class="shouldReallyBeAnH2">Time</p>
+        <p class="shouldReallyBeAnH2">Location</p>
       </div>
-      <div>
-        <h2>Description</h2>
-        <ul style="border-left: 5px solid black;" id="partyDescriptions"></ul>
-      </div>
-      <div>
-        <h2>Date</h2>
-        <ul class="noWrap" id="partyDates"></ul>
-      </div>
-      <div>
-        <h2>Time</h2>
-        <ul id="partyTimes"></ul>
-      </div>
-      <div>
-        <h2>Location</h2>
-        <ul class="noWrap" id="partyLocations"></ul>
-      </div>
+    </section>
+
+    <section id="partyList">
     </section>
   </body>
 </html>
