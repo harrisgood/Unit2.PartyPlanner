@@ -85,3 +85,6 @@ function renderState() {
     partyListSection.appendChild(newPartyDiv);
   })  
 }
+
+// every 10 seconds update the page in case the API has changed
+setInterval(renderPage(), 10000)
