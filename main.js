@@ -21,7 +21,7 @@ async function renderPage() {
   await getEvents(); // dont do anything until this line finishes
   renderState();
 }
-renderPage();
+
 async function getEvents() {
   // if theres no errors, run this code block
   try{  
