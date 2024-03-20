@@ -1,0 +1,51 @@
+      /*
+        todos:
+          -border between paragraphs (event properties)
+      */
+
+      div{
+        display: flex;
+        justify-content: space-between;
+        border: 5px solid black;
+        border-top: 0;
+        padding: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: violet;
+      }
+
+      /* make every other event background medium turquoise for legibility */
+      div:nth-child(odd){
+        background-color: mediumturquoise;
+      }
+
+      p{
+        font-size: large;
+      }
+
+      /* ensure that every paragraph has an appropriate amount of space */
+      p:first-child{
+        width: 15%;
+      }
+      p:nth-child(2){
+        width: 45%;
+      }
+      p:nth-child(3){
+        width: 10%;
+      }
+      p:nth-child(4){
+        width: 10%;
+      }
+      p:nth-child(5){
+        width: 15%;
+      }
+      
+      .headerDiv{
+        background-color: violet !important;
+        border-top: 5px solid black;
+      }
+
+      .shouldReallyBeAnH2{
+        font-size: xx-large;
+        font-weight: bolder;
+      }
